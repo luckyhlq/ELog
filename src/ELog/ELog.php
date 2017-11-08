@@ -85,7 +85,7 @@ class ELog {
 
     private static function log($level, $message, $channel = 'all', array $context = []) {
         if (self::$logger == null) {
-            throw new Exception("please init logger first", 1);
+            self::initLogger();
         }
 
         $context = array_merge(array('logid' => self::$logid), $context);
