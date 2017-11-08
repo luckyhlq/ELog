@@ -1,0 +1,15 @@
+{
+    "name": "luckyhlq/ELog",
+    "require": {
+        "monolog/monolog": "^1.22"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": {"ELog\\": "src/ELog"}
+    },
+    "autoload-dev": {
+        "psr-4": {"ELog\\": "tests/ELog"}
+    }
+}

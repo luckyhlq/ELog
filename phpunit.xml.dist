@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="./vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="ELog Test Suite">
+            <directory>tests/ELog/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/ELog/</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="./report" charset="UTF-8"/>
+    </logging>
+
+    <php>
+        <includePath>.</includePath>
+        <ini name="date.timezone" value="UTC"/>
+    </php>
+</phpunit>
