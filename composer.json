@@ -1,5 +1,5 @@
 {
-    "name": "luckyhlq/ELog",
+    "name": "luckyhlq/elog",
     "require": {
         "monolog/monolog": "^1.22"
     },
